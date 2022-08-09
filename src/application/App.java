@@ -11,9 +11,11 @@ import java.io.Serializable;
 class Person implements Serializable {
 	/* have to have the interface if going to use
 	 * serialization
+	 * Use the transient keyword to stop a field from
+	 * being serialized.
 	 */
 	private String name;
-	private int id;
+	private transient int id;
 	
 	public Person(String name, int id) {
 		this.name = name;
