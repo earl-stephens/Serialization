@@ -29,8 +29,9 @@ class Person implements Serializable {
 
 public class App {
 	public static void main(String[] args) {
-		/* serialization is used for saving and loading
-		 * entire objects
+		/* serialization is used for saving
+		 * entire objects to a file. Deserializtion is 
+		 * loading an object from a file.
 		 */
 		
 		Person p1 = new Person("Joe", 1);
